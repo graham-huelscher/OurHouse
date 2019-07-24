@@ -10,7 +10,8 @@ const HouseRoutes = require('./backend/Houses/HousesRoutes')
 app.use('/api/houses', HouseRoutes)
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+    // res.sendFile(path.join(__dirname+'/client/build/index.html'));
+    res.send("These is not the path your are looking for")
   });
 
 // Server Initialize
