@@ -1,0 +1,24 @@
+{
+  "name": "ourhouse",
+  "version": "1.0.0",
+  "description": "Networking App with the goal of connecting people for the purpose of owning property/apartments together.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graham-huelscher/OurHouse.git"
+  },
+  "author": "graham.huelscher@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graham-huelscher/OurHouse/issues"
+  },
+  "homepage": "https://github.com/graham-huelscher/OurHouse#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
