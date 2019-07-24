@@ -5,7 +5,7 @@ const app = express();
 
 const HouseRoutes = require('./backend/Houses/HousesRoutes')
 
-//app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/api/houses', HouseRoutes)
 
