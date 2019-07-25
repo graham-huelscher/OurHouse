@@ -5,12 +5,11 @@ class HousesCardDeck extends Component {
 
     render() {
 
-        const cardsJSX = []
-        for (let i = 0; i < 10; i++) cardsJSX.push(<HouseCard id={i+1}></HouseCard>)
+        const cardsJSX = this.props.housesArray.map(house => <HouseCard key={house.id} {...house}></HouseCard>)
         return (
-            <div class="container">
-                <div class="row">
-                    <div class="card-deck">
+            <div className="container">
+                <div className="row">
+                    <div className="card-deck">
                         {cardsJSX}
                     </div>
                 </div>

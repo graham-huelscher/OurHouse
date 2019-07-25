@@ -6,12 +6,11 @@ const app = express();
 const HouseRoutes = require('./backend/Houses/HousesRoutes')
 
 app.use(express.static(path.join(__dirname, 'client/build')));
-
+app.use(express.json())
 app.use('/api/houses', HouseRoutes)
 
 app.get('*', (req, res) => {
-    // res.sendFile(path.join(__dirname+'/client/build/index.html'));
-    res.send("These is not the path your are looking for")
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
   });
 
 // Server Initialize

@@ -3,12 +3,12 @@ import Jumbotron from './Jumbotron'
 import Search from './Search'
 import HousesCardDeck from './HousesCardDeck';
 
-const MainLayout = () => (
+const MainLayout = (props) => (
   <div >
     <Jumbotron />
-    <Search />
-    {/* Remove hard coded card deck. Needs to be dynamically populated with backend results based on search criteria */}
-    < HousesCardDeck />
+    <Search mainSearch={props.mainSearch} />
+    {props.housesArray ? < HousesCardDeck housesArray={props.housesArray} /> : null}
+
   </div>
 )
 

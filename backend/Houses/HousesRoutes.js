@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router()
 const HousesController  = require('./HousesController')
 
-router.get('/', async (req, res) => {
-
-    const mainHouses = await HousesController.getHouses()
+router.get('/:searchTerm', async (req, res) => {
+    const searchTerm = req.params.searchTerm
+    const mainHouses = await HousesController.getHouses(searchTerm)
     res.json(mainHouses)
 })
 

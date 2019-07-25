@@ -33,13 +33,44 @@ const hardCodedHouses = [
         address: "123 Baker Street",
         bedrooms: 4,
         bathrooms: 2
+    },
+    {
+        id: 6,
+        price: "$1,500,000",
+        address: "123 Baker Street",
+        bedrooms: 4,
+        bathrooms: 2
+    },
+    {
+        id: 7,
+        price: "$1,500,000",
+        address: "123 Baker Street",
+        bedrooms: 4,
+        bathrooms: 2
+    },
+    {
+        id: 8,
+        price: "$1,500,000",
+        address: "123 Baker Street",
+        bedrooms: 4,
+        bathrooms: 2
+    },
+    {
+        id: 9,
+        price: "$1,500,000",
+        address: "123 Baker Street",
+        bedrooms: 4,
+        bathrooms: 2
     }
 ]
 
 
 const HousesController = {
-    getHouses: async () => {
-        return hardCodedHouses
+    getHouses: async (searchTerm) => {
+        return hardCodedHouses.map(house => {
+            house.userSearch = searchTerm
+            return house
+        })
     }
 }
 
