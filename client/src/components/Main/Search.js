@@ -1,9 +1,9 @@
 import React from 'react'
 import './Main.css'
 
-const Jumbotron = () => (
+const Search = () => (
     <div class="container">
-        <form>
+        {/* <form>
             <div class="form-group row">
                 <label for="mainSearch" class="col-sm-2 col-form-label">Search</label>
                 <div class="col-sm-10">
@@ -51,10 +51,16 @@ const Jumbotron = () => (
                     <button type="submit" class="btn btn-primary">Search</button>
                 </div>
             </div>
-        </form>
+        </form> */}
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Please enter a city" aria-label="City search" aria-describedby="Main city search" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="mainSearch">Search</button>
+            </div>
+        </div>
 
 
     </div>
 )
 
-export default Jumbotron
+export default Search

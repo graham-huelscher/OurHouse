@@ -4,9 +4,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
