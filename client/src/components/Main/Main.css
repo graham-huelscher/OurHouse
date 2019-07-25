@@ -1,0 +1,12 @@
+  .bg-cover {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("./Vancouver-skyline-1.jpg");
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
